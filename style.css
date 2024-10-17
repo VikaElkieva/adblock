@@ -2,7 +2,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, #d60000, #111);
+    background: linear-gradient(to bottom, #d60000, #1a1a1a);  /* Градиент оставляем прежним */
     color: white;
     display: flex;
     justify-content: center;
@@ -22,12 +22,16 @@ body {
 h1 {
     color: white;
     margin-bottom: 10px;
-    font-size: 1.5rem;
+    font-size: 1.8rem;  /* Увеличим размер шрифта заголовка */
+    font-weight: bold;
 }
 
 p {
-    color: #ddd;
+    color: #eee;  /* Светлее текст */
     margin-bottom: 20px;
+    font-size: 1.1rem;  /* Увеличим размер шрифта текста */
+    font-weight: bold;  /* Делаем текст жирнее */
+    line-height: 1.6;  /* Увеличиваем межстрочное расстояние */
 }
 
 p strong {
@@ -38,17 +42,18 @@ p strong {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 20px;
 }
 
 .slider-wrapper {
     position: relative;
     width: 270px;
     height: 55px;
-    background: rgba(80, 80, 80, 0.2);  /* Обновленный цвет фона для ползунка */
+    background: rgba(80, 80, 80, 0.4);  /* Более насыщенный и менее полупрозрачный фон ползунка */
     border-radius: 50px;
     display: flex;
     align-items: center;
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.4);  /* Добавим глубины с более выраженной тенью */
 }
 
 .slider-track {
@@ -90,7 +95,7 @@ p strong {
 .cancel-button {
     display: inline-block;
     margin-top: 20px;
-    background: #333;
+    background: #444;  /* Более светлая кнопка */
     color: white;
     padding: 10px 20px;
     font-size: 1.2rem;
@@ -99,5 +104,5 @@ p strong {
 }
 
 .cancel-button:hover {
-    background: #555;
+    background: #666;
 }
