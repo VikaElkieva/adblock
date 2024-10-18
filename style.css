@@ -1,0 +1,105 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #d60000, #2e2e2e);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+.alert-box {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: white;
+    margin-bottom: 10px;
+    font-size: 1.6rem;
+    font-weight: normal;
+}
+
+p {
+    color: #eee;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.6;
+    white-space: pre-line;
+}
+
+p strong {
+    font-weight: bold;
+}
+
+.slider-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.slider-wrapper {
+    position: relative;
+    width: 220px;  /* Сокращаем ширину ползунка */
+    height: 50px;
+    background: #917f76;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.sos-circle {
+    position: absolute;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    background: red;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: grab;
+    transition: left 0.1s ease-in-out;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.slider-wrapper::before {
+    content: 'Download AdBlock';
+    color: white;
+    position: absolute;
+    left: 70px;  /* Центрируем текст */
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.cancel-button {
+    display: inline-block;
+    margin-top: 20px;
+    background: #917f76;
+    color: white;
+    padding: 8px 8px;
+    font-size: 1rem;
+    width: 80px;  /* Сокращаем ширину кнопки Cancel */
+    border-radius: 40px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto; /* Центрируем кнопку */
+}
+
+.cancel-button:hover {
+    background: rgba(120, 90, 60, 0.9);
+}
