@@ -36,7 +36,7 @@ p {
 }
 
 p strong {
-    font-weight: bold;  /* Выделяем жирным шрифтом слово "AdBlock" в тексте над ползунком */
+    font-weight: 600;
 }
 
 .slider-container {
@@ -70,8 +70,12 @@ p strong {
     font-weight: bold;
     font-size: 1.2rem;
     cursor: grab;
-    transition: left 0.8s ease-in-out;
+    transition: left 2s ease;
     box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.sos-circle.animate {
+    transition: left 2s ease; /* Плавная анимация */
 }
 
 .slider-wrapper::before {
@@ -80,7 +84,7 @@ p strong {
     position: absolute;
     left: 80px;
     font-size: 1rem;
-    font-weight: normal;  /* Убираем жирное выделение в ползунке */
+    font-weight: normal;
 }
 
 .cancel-button {
