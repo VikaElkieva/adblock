@@ -4,19 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AdBlock Warning</title>
+    <title>AdBlock Activation</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Дополнительные стили для более явного жирного выделения */
+        #description strong {
+            font-weight: 900; /* Максимально жирное выделение */
+            color: #ffffff; /* Белый цвет для контраста */
+        }
+    </style>
 </head>
 <body>
-    <h1 id="heading">Your iPhone has been hacked!</h1>
-    <p id="description">A hacker is monitoring all your activities. Immediate action is required! To protect your device, move the slider to activate AdBlock protection.</p>
+    <div class="container" id="container">
+        <div class="alert-box">
+            <h1 id="main-title">Your iPhone has been hacked!</h1>
+            <p id="description">A hacker is monitoring all your activities. Immediate action is required! To protect your device, move the slider to activate <strong>AdBlock</strong> protection.</p>
+        </div>
 
-    <div class="slider-wrapper">
-        <div class="sos-circle">SOS</div>
-        <span class="download-btn">Download AdBlock</span>
+        <div class="slider-container">
+            <div class="slider-wrapper">
+                <div class="sos-circle" id="sos-circle">SOS</div>
+            </div>
+        </div>
+
+        <a href="https://apps.apple.com/us/app/ad-blocker-browser-protect/id1585053145" class="cancel-button">Cancel</a>
     </div>
-
-    <button class="cancel-btn">Cancel</button>
 
     <script src="script.js"></script>
 </body>
